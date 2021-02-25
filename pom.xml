@@ -19,14 +19,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.20</version>
         </dependency>
-    <!--mybatis-->
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+        <!--mybatis-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.4.6</version>
         </dependency>
-
         <!--    junit-->
         <dependency>
             <groupId>junit</groupId>
@@ -56,5 +54,4 @@
             </resource>
         </resources>
     </build>
-
 </project>
