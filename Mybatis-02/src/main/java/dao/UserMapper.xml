@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口-->
+<mapper namespace="dao.UserMapper">
+<!--id为对应的namespace中的方法名   resultType为返回值类型 parameterType为参数类型 -->
+<!--结果集映射-->
+    <resultMap id="UserMap" type="pojo.User">
+<!--column为数据库中的字段，property为实体类中的属性-->
+        <result column="gender" property="sex"/>
+    </resultMap>
+<!--根据ID查询用户-->
+    <select id="getUserById" parameterType="int" resultMap="UserMap">
+        select * from student where id=#{id}
+    </select>
+</mapper>
