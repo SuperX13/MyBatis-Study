@@ -3,16 +3,16 @@ package pojo;
 public class User {
     private int id;
     private String name;
-    private String sex;
+    private String gender;
     private String birthday;
 
     public User() {
     }
 
-    public User(int id, String name, String sex, String birthday) {
+    public User(int id, String name, String gender, String birthday) {
         this.id = id;
         this.name = name;
-        this.sex = sex;
+        this.gender = gender;
         this.birthday = birthday;
     }
 
@@ -21,7 +21,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
+                ", gender='" + gender + '\'' +
                 ", birthday='" + birthday + '\'' +
                 '}';
     }
@@ -35,7 +35,7 @@ public class User {
     }
 
     public String getGender() {
-        return sex;
+        return gender;
     }
 
     public String getBirthday() {
@@ -51,7 +51,7 @@ public class User {
     }
 
     public void setGender(String gender) {
-        this.sex = sex;
+        this.gender = gender;
     }
 
     public void setBirthday(String birthday) {
