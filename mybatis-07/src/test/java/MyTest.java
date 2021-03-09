@@ -9,7 +9,7 @@ public class MyTest {
     public void test(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         TeacherMapper mapper = sqlSession.getMapper(TeacherMapper.class);
-        Teacher teacher = mapper.getTeacher(1);
+        Teacher teacher = mapper.getTeacher(2);
         System.out.println(teacher);
         sqlSession.close();
     }

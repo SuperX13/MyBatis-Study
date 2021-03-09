@@ -9,5 +9,5 @@ public class Student {
     private String name;
     private String gender;
     private String birthday;
-    private String tid;
+    private int tid;
 }
